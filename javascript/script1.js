@@ -46,26 +46,34 @@ $(window).mousemove(function(e){
 });
 
 
-$('.mouseCont .style1').hover(function(){
-    $('.cursor').addClass('style1');
-}, function(){
-    $('.cursor').removeClass('style1');
-});
+ $('.mouseCont .style1').hover(function(){
+     $('.cursor').addClass('style1');
+ }, function(){
+     $('.cursor').removeClass('style1');
+ });
 
-$('.mouseCont .style2').hover(function(){
-    $('.cursor').addClass('style2');
-}, function(){
-    $('.cursor').removeClass('style2');
-});
+ $('.mouseCont .style2').hover(function(){
+     $('.cursor').addClass('style2');
+ }, function(){
+     $('.cursor').removeClass('style2');
+ });
+
+ $('.mouseCont .style3').hover(function(){
+    $('.cursor').addClass('style3');
+ }, function(){
+     $('.cursor').removeClass('style3');
+ });
 
 $('.mouseCont .style3').hover(function(){
-    $('.cursor').addClass('style3');
-}, function(){
-    $('.cursor').removeClass('style3');
-});
+     $('.cursor').addClass('style3');
+ }, function(){
+     $('.cursor').removeClass('style3');
+ });
 
-$('.mouseCont .style3').hover(function(){
-    $('.cursor').addClass('style3');
-}, function(){
-    $('.cursor').removeClass('style3');
-});
+// const cursor = $('.cursor');
+// const follower = $('.cursor-follower');
+
+// $(window).mousemove(function(e){
+//     cursor.css({left:e.pageX -5, top:e.pageY -5})
+//     follower.css({left:e.pageX -15, top:e.pageY -15})
+// })
