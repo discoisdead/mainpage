@@ -98,3 +98,8 @@ $('.mouseCont .style3').hover(function(){
 //     cursor.css({left:e.pageX -5, top:e.pageY -5})
 //     follower.css({left:e.pageX -15, top:e.pageY -15})
 // })
+
+
+$('.local_main img').on('mouseenter', function(){
+    $('.visible').css('display', 'block');
+});
