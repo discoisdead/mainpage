@@ -934,6 +934,10 @@ cursor: pointer;
                 position: absolute;
                 display: none;
             }
+            .special_text {
+                width: 1340px;
+                margin: 0 auto;
+            }
             .content5 {
                 width: 100%;
                 padding-bottom: 150px;
