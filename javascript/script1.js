@@ -55,10 +55,6 @@ $('.domestic li:nth-child(3)').on('mouseenter', function(){
     $('.recommand').fadeToggle(500);
 });
 
-$('.weekly_best img').on('mouseenter', function(){
-    $('.img_bg_black').fadeToggle(700);
-});
-
 $(window).mousemove(function(e){
     //$(".cursor").css("left", "100px");
     //$(".cursor").css("top", "100px");
@@ -98,8 +94,3 @@ $('.mouseCont .style3').hover(function(){
 //     cursor.css({left:e.pageX -5, top:e.pageY -5})
 //     follower.css({left:e.pageX -15, top:e.pageY -15})
 // })
-
-
-$('.local_main img').on('mouseenter', function(){
-    $('.visible').css('display', 'block');
-});
