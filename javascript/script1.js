@@ -55,37 +55,37 @@ $('.domestic li:nth-child(3)').on('mouseenter', function(){
     $('.recommand').fadeToggle(500);
 });
 
-$(window).mousemove(function(e){
-    //$(".cursor").css("left", "100px");
-    //$(".cursor").css("top", "100px");
+// $(window).mousemove(function(e){
+//     //$(".cursor").css("left", "100px");
+//     //$(".cursor").css("top", "100px");
 
-    $('.cursor').css({left: e.clientX -25, top: e.clientY -25 })
-});
+//     $('.cursor').css({left: e.clientX -25, top: e.clientY -25 })
+// });
 
 
- $('.mouseCont .style1').hover(function(){
-     $('.cursor').addClass('style1');
- }, function(){
-     $('.cursor').removeClass('style1');
- });
+//  $('.mouseCont .style1').hover(function(){
+//      $('.cursor').addClass('style1');
+//  }, function(){
+//      $('.cursor').removeClass('style1');
+//  });
 
- $('.mouseCont .style2').hover(function(){
-     $('.cursor').addClass('style2');
- }, function(){
-     $('.cursor').removeClass('style2');
- });
+//  $('.mouseCont .style2').hover(function(){
+//      $('.cursor').addClass('style2');
+//  }, function(){
+//      $('.cursor').removeClass('style2');
+//  });
 
- $('.mouseCont .style3').hover(function(){
-    $('.cursor').addClass('style3');
- }, function(){
-     $('.cursor').removeClass('style3');
- });
+//  $('.mouseCont .style3').hover(function(){
+//     $('.cursor').addClass('style3');
+//  }, function(){
+//      $('.cursor').removeClass('style3');
+//  });
 
-$('.mouseCont .style3').hover(function(){
-     $('.cursor').addClass('style3');
- }, function(){
-     $('.cursor').removeClass('style3');
- });
+// $('.mouseCont .style3').hover(function(){
+//      $('.cursor').addClass('style3');
+//  }, function(){
+//      $('.cursor').removeClass('style3');
+//  });
 
 // const cursor = $('.cursor');
 // const follower = $('.cursor-follower');
