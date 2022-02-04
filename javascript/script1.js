@@ -14,7 +14,7 @@ $(document).ready(function(){
 		$("#"+$(this).data('id')).addClass('on');
 	})
 
-})
+});
 $(document).ready(function(){
 	
 	$('ul.category2 li').click(function(){
@@ -31,7 +31,7 @@ $(document).ready(function(){
 		$("#"+$(this).data('id')).addClass('on');
 	})
 
-})
+});
 
 $(document).ready(function(){
                     $('.bxSlider').bxSlider({

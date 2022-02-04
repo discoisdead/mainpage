@@ -11,11 +11,15 @@
             var cnt = 1;
             $('#addMenu').click(function(){
                 cnt++;
-                $('#menu').append('<li>내용'+cnt+'</li>');
+                $('#menu').append('<li>내용'+cnt+'<button class=\del\'>X</button></li>');
             });
             $('#add2').click(function(){
-                cnt--;
+                if(cnt>0)cnt--; 
             $('#menu li').last().remove();
+            });
+
+            $('#menu').on('click',"#del",function(){
+                $(this).parent().remove();
             });
         });
     </script>
@@ -24,7 +28,7 @@
     <button id="addMenu">추가</button>
     <button id="add2">삭제</button>
     <ul id="menu">
-        <li>내용1</li>
+        <li>내용1 <button id="del">X</button></li>
     </ul>
 </body>
 </html>
