@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var score = prompt("몇점?");
+        // if(score>=90 && score <= 100){
+        //     document.write('A입니다.');
+        // }else if(score >= 80 && score <=89){
+        //     document.write('B입니다.');
+        // }else if(score >= 70 && score <= 79){
+        //     document.write('C입니다.')
+        // }else{
+        //     document.write('F')
+        // }
+
+        var id = 'easy1004';
+        var pw = '112233';
+
+        var user_id = prompt('아이디는?')
+        var user_pw = prompt('비번?')
+        
+        if(id == user_id){
+            if(pw == user_pw){
+                document.write(user_id + '반갑습니다.')
+            }else{
+                alert('일치하지않습니다.');
+                location.reload();
+            }
+        }else{
+            alert('아이디일치x');
+            location.reload();
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

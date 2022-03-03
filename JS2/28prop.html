@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../scrpit/jquery.js"></script>
+    <script>
+            var fruit;
+            var weather;
+        $(function(){
+            $('.add').click(function(){
+            var result_1 = $('#chk1').prop('checked');
+            
+            var result_2 = $('#chk2').prop('checked');
+            
+            var result_3 = $('#chk3').prop('checked');
+            if(result_1){
+                fruit = '딸기'
+            }else if(result_2){
+                fruit = '사과'
+            }else{
+                fruit = '배'
+            };
+            var select = $('#se_1').prop('selectedIndex')
+            switch(select){
+                case 0 : weather = '봄';
+                break; 
+                case 1 : weather = '여름';
+                break;
+                case 2 : weather = '가을';
+                break; 
+                case 3 : weather = '겨울';
+                break; 
+            }
+                $('.list').append('<li> 과일:' , fruit + '계절:' + weather+'</li>');
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <h1>
+        <strong>객체 조작 및 생성</strong>
+    </h1>
+    <form action="#" id="form_1">
+        <p>
+            <input type="radio" name="chk1" id="chk1">
+            <label for="chk1">딸기</label>
+            <input type="radio" name="chk2" id="chk2">
+            <label for="chk2">사과</label>
+            <input type="radio" name="chk3" id="chk3">
+            <label for="chk3">배</label>
+        </p>
+        <p>
+            <select name="se_1" id="se_1">
+                <option value="opt1">봄</option>
+                <option value="opt2">여름</option>
+                <option value="opt3">가을</option>
+                <option value="opt4" selected>겨울</option>
+            </select>
+        </p>
+        <button class="add">추가</button>
+        <ul class="list">
+
+        </ul>
+    </form>
+</body>
+</html>
